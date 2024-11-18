@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonsuz Sevgimle</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Menü -->
+    <nav>
+        <ul>
+            <li><a href="#home">Anasayfa</a></li>
+            <li><a href="#compliments">Sana Övgüler</a></li>
+            <li><a href="#memories">Anılarımız</a></li>
+            <li><a href="#about-us">Bize Dair</a></li>
+        </ul>
+    </nav>
+
+    <!-- Anasayfa -->
+    <section id="home" class="section">
+        <h1>Hoş Geldin, Aşkım!</h1>
+        <p>bu sayfa hayatıma ışık katan karım için özel olarak hazırlanmıştır , karımya.</p>
+        <button id="popup-trigger">Sana Sürprizim Var ❤️</button>
+    </section>
+
+    <!-- Sana Övgüler -->
+    <section id="compliments" class="section">
+        <h2>karımı seviyorum</h2>
+        <ul>
+            <li>Gözlerin, dünyamın en güzel manzarası.</li>
+            <li>Gülüşün, kalbimi eriten en sıcak an.</li>
+            <li>Seninle yaşadığım her an sanki daha önce yaşamıyormuş gibi hissetmeme neden oluyor. seni çok seviyorum karım</li>
+            <li>Aşkımız, bir güneş gibi parlamakta .</li>
+            <li>Seninle konuşmak bile, bütün gün mutlu gezmeme değer bebeğimbenim.</li>
+        </ul>
+    </section>
+
+    <!-- Anılarımız -->
+    <section id="memories" class="section">
+        <h2>karımla Anılarımız</h2>
+        <div class="photo-grid">
+            <img src="photo1.jpeg" alt="">
+            <img src="photo2.jpeg" alt="">s
+            <img src="photo3.jpeg" alt="Anı 3">
+            <img src="photo4.jpeg" alt="Anı 4">
+        </div>
+    </section>
+
+    <!-- Bize Dair -->
+    <section id="about-us" class="section">
+        <h2>karımla bana dair</h2>
+        <p>Seninle her gün yeni bir güne mutlu uyanıyorum. teşekkürler sevgilim hep beraber olalım.</p>
+        <p>Sonsuza kadar sürecek bu hikayenin en güzel kahramanı sensin. ❤️</p>
+    </section>
+
+    <!-- Pop-up -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="popup-close" class="popup-close">&times;</span>
+            <h3>Sevgilim için bir sürpriz!</h3>
+            <p>Her gün seni daha çok seviyorum karımbenim. Bu sayfa karımı ne kadar önemsediğimi göstermek için hazırlandı. ❤️</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Bu site sana olan sevgimi göstermek için hazırlandı. 💕</p>
+    </footer>
+
+    <script>
+          // Pop-up kontrolü
+const popupTrigger = document.getElementById('popup-trigger');
+const popup = document.getElementById('popup');
+const popupClose = document.getElementById('popup-close');
+
+popupTrigger.addEventListener('click', () => {
+    popup.style.display = 'flex';
+});
+
+popupClose.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+    </script>
+</body>
+</html>
